@@ -1,12 +1,12 @@
 @keyframes coin-flip {
     0% {background: url("./images/heads.png")}
-    
+
     25% {background: url("./images/tails.png")}
-    
+
     50% {background: url("./images/heads.png")}
-    
+
     75% {background: url("./images/tails.png")}
-    
+
     100% {background: url("./images/heads.png")}
 }
 
@@ -17,17 +17,23 @@
   animation-name: coin-flip;
   animation-duration: 1s;
   animation-iteration-count: 2;
-  
+
 }
 
 body {
-    background-color: gray;
+  font-family: serif;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 18pt;
+  margin: 0 25px;
+}
+
+.coin-heads {
+    margin-left: 330px;
   }
-  
-  .coin-heads {
-    margin-left: 400px;
-  }
-  
+
   #coin-flip {
     background: url("./images/heads.png");
     height: 405px;
@@ -35,27 +41,36 @@ body {
     margin-left: 250px;
   }
   h1 {
-    margin-left: 320px;
+    margin-left: 280px;
   }
 
+.player-score {
+  margin-left: 40px;
+}
 
   .scoreboard {
-    background-color: lightgray;
     display: inline-block;
     font-size: 7rem;
-    height: 150px;
-    width: 150px;
-    margin: 30px 150px;
+    height: 125px;
+    width: 125px;
+    margin: 10px 140px;
     text-align: center;
   }
 
-  .starting-coin {
-      background: url("./images/heads.png");
-    
-  }
-  
-  .user-pick {
-    margin-left: 355px;
-  }
+.scoreboard-header {
+  display: inline-block;
+  font-size: 30px;
+}
 
- 
+.c1 {
+  margin-left: 225px;
+}
+
+.p1 {
+  margin-left: 135px;
+}
+
+  .coin-outcome {
+    margin-left: 220px;
+    font-size: 3rem;
+  }
