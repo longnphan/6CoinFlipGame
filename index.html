@@ -3,29 +3,31 @@
   <title>Coin Flip Game</title>
   <link rel="stylesheet" href="styles.css" />
   </head>
+
 <body>
-<div class="top">
-  <h1> First player to 3 wins</h1>
-</div>
+<div class="container">
+  <div class="top">
+    <h1> First player to 3 wins</h1>
+  </div>
 
-<div>
-  <div class="scoreboard-header p1">Your Score:</div>
-  <div class="scoreboard-header c1">Computer Score:</div>
-</div>
+  <div>
+    <div class="scoreboard-header p1">Your Score:</div>
+    <div class="scoreboard-header c1">Computer Score:</div>
+  </div>
+  
+  <div>
+    <div class="scoreboard player-score">0</div>
+    <div class="scoreboard computer-score">0</div>
+  </div>
 
-
-<div>
-  <div class="scoreboard player-score">0</div>
-  <div class="scoreboard computer-score">0</div>
-</div>
-
-<div id="coin-flip"></div>
-<div>
+  <div id="coin-flip"></div>
+  <div class="bottom-selection">
     <h1>Please make a selection</h1>
     <button class="coin-heads" onclick="heads()">Heads</button>
     <button class="coin-tails" onclick="tails()">Tails</button>
     <p class="coin-outcome"></p>
   </div>
+</div>
 
   <script src="index.js"></script>
   </body>

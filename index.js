@@ -4,7 +4,6 @@ var computerScore = 0;
 
 /// When player selects heads
 function heads() {
-  document.querySelector(".coin-outcome").innerHTML = "";
   document.querySelector("#coin-flip").classList.add("animate");
   let pause = setInterval(randomOutcome, 2000);
 
@@ -25,7 +24,6 @@ function heads() {
 
 /// When player selects tails
 function tails() {
-  document.querySelector(".coin-outcome").innerHTML = "";
   document.querySelector("#coin-flip").classList.add("animate");
   let pause = setInterval(randomOutcome, 2000);
 
@@ -69,5 +67,4 @@ function reset() {
   playerScore = 0;
   computerScore = 0;
   updateScore();
-  document.querySelector(".coin-outcome").innerHTML = "";
 }

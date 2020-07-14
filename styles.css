@@ -17,7 +17,6 @@
   animation-name: coin-flip;
   animation-duration: 1s;
   animation-iteration-count: 2;
-
 }
 
 body {
@@ -26,40 +25,21 @@ body {
 
 button {
   border-radius: 10px;
-  font-size: 18pt;
-  margin: 0 25px;
+  font-size: 25pt;
+  margin: 15px auto;
+  margin-left: 207px;
 }
 
-.coin-heads {
-    margin-left: 330px;
-  }
+.container {
+  width: 820px;
+  margin: 0 auto;
+}
 
-  #coin-flip {
+#coin-flip {
     background: url("./images/heads.png");
     height: 405px;
     width: 405px;
-    margin-left: 250px;
-  }
-  h1 {
-    margin-left: 280px;
-  }
-
-.player-score {
-  margin-left: 40px;
-}
-
-  .scoreboard {
-    display: inline-block;
-    font-size: 7rem;
-    height: 125px;
-    width: 125px;
-    margin: 10px 140px;
-    text-align: center;
-  }
-
-.scoreboard-header {
-  display: inline-block;
-  font-size: 30px;
+    margin: 0 auto;
 }
 
 .c1 {
@@ -69,3 +49,27 @@ button {
 .p1 {
   margin-left: 135px;
 }
+
+  h1 {
+    text-align: center;
+  }
+
+.player-score {
+  margin-left: 40px;
+}
+
+.scoreboard {
+    display: inline-block;
+    font-size: 6rem;
+    height: 125px;
+    width: 125px;
+    margin: 10px 140px;
+    text-align: center;
+}
+
+.scoreboard-header {
+  display: inline-block;
+  font-size: 30px;
+}
+
+
