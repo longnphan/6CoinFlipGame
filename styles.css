@@ -23,11 +23,17 @@ body {
   font-family: serif;
 }
 
+.bottom-selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
+  border: 2px solid black;
   border-radius: 10px;
   font-size: 25pt;
-  margin: 15px auto;
-  margin-left: 207px;
+  margin: 15px 50px;
 }
 
 .container {
@@ -42,34 +48,43 @@ button {
     margin: 0 auto;
 }
 
-.c1 {
-  margin-left: 225px;
-}
-
-.p1 {
-  margin-left: 135px;
+.game-score {
+  font-size: 6rem;
+  text-align: center;
 }
 
   h1 {
+    margin: 0 auto;
     text-align: center;
   }
 
-.player-score {
-  margin-left: 40px;
-}
-
-.scoreboard {
-    display: inline-block;
-    font-size: 6rem;
-    height: 125px;
-    width: 125px;
-    margin: 10px 140px;
-    text-align: center;
-}
-
 .scoreboard-header {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 30px;
+  margin-top: 10px;
 }
 
+.selection-header {
+  margin-top: 15px;
+}
+.c1 {
+  display: inline-block;
+  margin: 0 50px;
+}
 
+.p1 {
+  display: inline-block;
+  margin: 0 50px;
+}
+
+.computer-score {
+  display: inline-block;
+  margin: 0 110px;
+}
+
+.player-score {
+display: inline-block;
+margin: 0 110px;
+}

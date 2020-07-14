@@ -7,22 +7,22 @@
 <body>
 <div class="container">
   <div class="top">
-    <h1> First player to 3 wins</h1>
+    <h1><u> First player to 3 wins</u></h1>
   </div>
 
-  <div>
-    <div class="scoreboard-header p1">Your Score:</div>
-    <div class="scoreboard-header c1">Computer Score:</div>
+  <div class="scoreboard-header">
+    <div class="p1">Your Score:</div>
+    <div class="c1">Computer Score:</div>
   </div>
   
-  <div>
-    <div class="scoreboard player-score">0</div>
-    <div class="scoreboard computer-score">0</div>
+  <div class="game-score">
+    <div class="player-score">0</div>
+    <div class="computer-score">0</div>
   </div>
 
   <div id="coin-flip"></div>
+  <h1 class="selection-header">Please make a selection</h1>
   <div class="bottom-selection">
-    <h1>Please make a selection</h1>
     <button class="coin-heads" onclick="heads()">Heads</button>
     <button class="coin-tails" onclick="tails()">Tails</button>
     <p class="coin-outcome"></p>
