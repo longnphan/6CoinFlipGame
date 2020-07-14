@@ -6,13 +6,12 @@ var computerScore = 0;
 function heads() {
   document.querySelector(".coin-outcome").innerHTML = "";
   document.querySelector("#coin-flip").classList.add("animate");
-  let x = setInterval(randomOutcome, 2000);
+  let pause = setInterval(randomOutcome, 2000);
 
   function randomOutcome() {
     document.querySelector("#coin-flip").classList.remove("animate");
     let random = Math.round(Math.random());
-    document.querySelector(".coin-outcome").innerHTML = `The outcome is ${outcomeOptions[random]}`;
-    clearInterval(x);
+    clearInterval(pause);
        if (outcomeOptions[random] === "heads") {
         document.querySelector("#coin-flip").style.background = `url("./images/heads.png")`
          playerScore++;
@@ -23,17 +22,18 @@ function heads() {
        updateScore();
   }
 }
+
 /// When player selects tails
 function tails() {
   document.querySelector(".coin-outcome").innerHTML = "";
   document.querySelector("#coin-flip").classList.add("animate");
-  let x = setInterval(randomOutcome, 2000);
+  let pause = setInterval(randomOutcome, 2000);
 
   function randomOutcome() {
     document.querySelector("#coin-flip").classList.remove("animate");
     let random = Math.round(Math.random());
-    document.querySelector(".coin-outcome").innerHTML = `The outcome is ${outcomeOptions[random]}`;
-    clearInterval(x);
+
+    clearInterval(pause);
        if (outcomeOptions[random] === "tails") {
         document.querySelector("#coin-flip").style.background = `url("./images/tails.png")`;
         playerScore++;;
@@ -50,13 +50,19 @@ function updateScore() {
   document.querySelector(".player-score").innerHTML = playerScore;
   document.querySelector(".computer-score").innerHTML = computerScore;
   if (playerScore === 3) {
-    alert("You Won!!!");
-    reset();
+    ///Set Timeout to allow the final score to update to three before alert is displayed.
+    setTimeout(function () {
+      alert("You Won!!!");
+      reset();
+    }, 100);
+
   } else if (computerScore === 3) {
-    alert("The Computer Won");
-    reset();
+    setTimeout(function () {
+      alert("The Computer Won");
+      reset();
+    }, 100);
   }
-  }
+}
 
 // Reset scoreboard after game ends.
 function reset() {
